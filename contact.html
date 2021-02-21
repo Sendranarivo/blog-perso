@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accueil</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.min.css">
+	<script src="jquery/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+	<div class="text-center bg">
+	  <h1>Mon chez moi</h1>      
+	  <p> " L'endroit tu voudrai toujours y rester,c'est là ou se trouve mon coeur..." </p>
+
+	</div>
+
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+		  	<a class="navbar-brand" href="#">Mon Blog</a>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  	</button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item ">
+				        	<a class="nav-link" href="index.html"><i class="fa fa-home"></i> Accueil <span class="sr-only"></span></a>
+				      </li>
+				      <li class="nav-item">
+				        	<a class="nav-link" href="blog.html"><i class="fa fa-newspaper-o"></i> Blog </a>
+				      </li>
+				      <li class="nav-item">
+				        	<a class="nav-link" href="tableau_de_bord.html"><i class="fa fa-line-chart"></i> Tableau de bord</a>
+				      </li>
+				      <li class="nav-item">
+				        	<a class="nav-link" href="contact.html"><i class="fa fa-phone"></i> Contact </a>
+				      </li>
+			    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+		<section>
+			<div class="row">
+				<div class="col-md-3 px-4 pt-4">
+					<h4 class="ttl">Nos articles</h4>
+					<ul class="nav nav-pills flex-column">
+				        <li class="nav-item">
+				          <a class="nav-link active" href="#">Le fameux Karenjy</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="#">Lazan'i Bestileo</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="#">Le chemin de fer du Côte Est</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link " href="#">Notre bon-Thé "Sambavy"</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link " href="#"></a>
+				        </li>
+				      </ul>
+				</div>
+				<div class="col-md-6 pt-4">
+					<div class="card">
+					  <div class="card-header bg-success text-black-50">
+					  	<h3>Contactez-Nous</h3>
+					  </div>
+					  <div class="card-body">
+					  		<form action="registration.php" method="post">
+					  			<div class="form-group">
+						            <label for="firstname"><strong>Nom : </strong></label>
+						            <input class = "form-control" placeholder="Tapez votre Nom" id= "firstname" type="text" name="firstname" required>
+					        	</div>
+					        	<div class="form-group">
+						            <label for="lastname"><strong>Prénoms : </strong></label>
+						            <input class = "form-control" placeholder="Tapez votre Prénoms" id= "lastname" type="text" name="lastname" required>
+					        	</div>
+					        	<div class="form-group">
+						            <label for="username"><strong>Fonction</strong></label>
+						            <select class="form-control" id="" type="text" name="role">
+						                <option>Entreprise</option>
+						                <option>Etudiant</option>
+						                <option>Professionnel</option>
+						            </select>
+					        	</div>
+					        	<div class="form-group">
+						            <label for="email"><strong>E-mail : </strong></label>
+						            <input class = "form-control" placeholder="Adresse E-mail" id= "email" type="email" name="email" required>
+					        	</div>
+					        	<div class="form-group">
+						            <label for="date"><STRONG>Message : </STRONG></label>
+						    		<textarea type="text" class="form-control" id="contenue"></textarea>  
+					    		</div>
+					            
+					            <br class="mb3">
+					            <input class ="btn btn-primary" type="submit" id ='register' name="valider"  value="Sing up" data-toggle="collapse" data-target="#alert_success">
+					            <input class ="btn btn-primary" type="reset" id ='reset' name="annuler"  value="Cancel">
+
+					        </form>
+					  </div>
+					  
+					</div>
+				</div>
+				<div class="col-md-3 px-4 pt-4">
+					<h4 class="ttl">Créer nouveau article</h4>
+					<form action="/action_page.php">
+					  <div class="form-group">
+					    <label for="titre"><strong>Titre : </strong></label>
+					    <input type="text" class="form-control" id="titre">
+					  </div>
+					  <div class="form-group">
+					    <label for="date"><strong>Date de création : </strong></label>
+					    <input type="Date" class="form-control" id="datea">
+					  </div>
+					  <div class="form-group">
+					    <label for="date"><strong>Contenue : </strong></label>
+					    <textarea type="text" class="form-control" id="contenue"></textarea>  
+					  </div>
+					  <div class="form-group">
+					    <label for="date"><strong>Image : </strong></label>
+						  <div class="custom-file">
+						    <input type="file" class="custom-file-input" id="customFile">
+						    <label class="custom-file-label" for="customFile">Choisir une image</label>
+						  </div>
+					  </div>
+					  <div class="form-group form-check">
+					    <label class="form-check-label">
+					      <input class="form-check-input" type="checkbox"> Se souvenir de moi
+					    </label>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+</body>
+</html>

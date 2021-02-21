@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accueil</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.min.css">
+	<script src="jquery/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+	<div class="text-center bg">
+	  <h1>Mon chez moi</h1>      
+	  <p> " L'endroit tu voudrai toujours y rester,c'est là ou se trouve mon coeur..." </p>
+
+	</div>
+<!-- Bar de Navigation -->
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+		  	<a class="navbar-brand" href="#">Mon Blog</a>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  	</button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item ">
+				        	<a class="nav-link" href="index.html"><i class="fa fa-home"></i> Accueil <span class="sr-only"></span></a>
+				      </li>
+				      <li class="nav-item">
+				        	<a class="nav-link" href="blog.html"><i class="fa fa-newspaper-o"></i> Blog </a>
+				      </li>
+				      <li class="nav-item">
+				        	<a class="nav-link" href="tableau_de_bord.html"><i class="fa fa-line-chart"></i> Tableau de bord</a>
+				      </li>
+				      <li class="nav-item">
+				        	<a class="nav-link" href="contact.html"><i class="fa fa-phone"></i> Contact </a>
+				      </li>
+			    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+		<section>
+			<div class="row">
+				<div class="col-md-3 px-4 pt-4">
+					<h4 class="ttl">Nos articles</h4>
+					<ul class="nav nav-pills flex-column">
+				        <li class="nav-item">
+				          <a class="nav-link active" href="#"><i class="fa fa-car"></i>  Le fameux Karenjy</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="#">Lazan'i Bestileo</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="#">Le chemin de fer du Côte Est</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link " href="#">Notre bon-Thé "Sambavy"</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link " href="#"></a>
+				        </li>
+				      </ul>
+				</div>
+				<div class="col-md-6 pt-4 px-3">
+					<div class="card-group pb-3">
+						  <div class="card">
+						    <a href="https://www.google.com/maps/@-21.4532951,47.1161523,13z?hl=en"><img class="card-img-top" src="images/image_3.png" alt="Card image cap"></a>
+							    <div class="card-footer">
+								      <small class="text-muted">Ville de Fianarantsoa</small></p>
+							    </div>
+						  </div>
+					 </div>
+					<div class="card-group">
+						  <div class="card">
+						    <img class="card-img-top" src="images/image_1.JPG" alt="Card image cap">
+							    <div class="card-body">
+								      <h5 class="card-title">La vieille ville de la Capitale du Betsileo</h5>
+								      <p class="card-text">Fianarantsoa, une ville de la haute Terre au sud de la Capitale de la Grande Iles, cette ancienne ville...</p>
+								      <p class="card-text"><i>-- RAKOARINARIVO Nambinintsoa Josée -- </i></p>
+								      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							    </div>
+						  </div>
+					 </div>
+					
+				</div>
+				<div class="col-md-3 px-4 pt-4">
+					<h4 class="ttl">Créer nouveau article</h4>
+					<form action="/action_page.php">
+					  <div class="form-group">
+					    <label for="titre">Titre : </label>
+					    <input type="text" class="form-control" id="titre" placeholder="Le titre de mon article...">
+					  </div>
+					  <div class="form-group">
+					    <label for="date">Date de création : </label>
+					    <input type="Date" class="form-control" id="datea">
+					  </div>
+					  <div class="form-group">
+					    <label for="date">Contenue : </label>
+					    <textarea type="text" class="form-control" id="contenue" placeholder-shown="Tapez ici le contenue du nouveau poste"></textarea>  
+					  </div>
+					  <div class="form-group form-check">
+					    <label class="form-check-label">
+					      <input class="form-check-input" type="checkbox"> Se souvenir de moi
+					    </label>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Soumettre</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+        <footer class="footer container-fluid bg-dark hy">
+        	<div class="row">
+        		<div class="col-md-3">
+        			
+        		</div>
+        		<div class="col-md-3">
+        			
+        		</div>
+        		<div class="col-md-3">
+        			
+        		</div>
+        	</div>
+        </footer>
+
+</body>
+</html>

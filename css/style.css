@@ -1,0 +1,13 @@
+.bg{
+	background-image: url(../images/image_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	height: 200px;
+	padding: 50px;
+}
+
+.ttl{
+  font-family: Trebuchet MS, sans-serif;
+}
+
